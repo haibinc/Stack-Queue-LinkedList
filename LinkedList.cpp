@@ -86,7 +86,7 @@ void LinkedList<T>::insertBefore(Node<T> *newNode, Node<T> *targetNode)
         newNode->previous = targetNode->previous;
         targetNode->previous = newNode;
     }
-    std::cout << "head's data: " << head->data << std::endl;
+//    std::cout << "head's data: " << head->data << std::endl;
 }
 
 template<typename T>
@@ -106,7 +106,7 @@ void LinkedList<T>::insertAfter(Node<T> *newNode, Node<T> *targetNode)
         }
         targetNode->next = newNode;
     }
-    std::cout << "tail's data: " << tail->data << std::endl;
+//    std::cout << "tail's data: " << tail->data << std::endl;
 //    std::cout << "tail's previous: " << tail->data << std::endl;
 //    std::cout << "target node next: " << (targetNode->next)->data << std::endl;
 
@@ -170,7 +170,7 @@ T &LinkedList<T>::back()
     {
         walker = walker->next;
     }
-    std::cout << "last item: " << walker->data << std::endl;
+//    std::cout << "last item: " << walker->data << std::endl;
     return walker->data;
 }
 
